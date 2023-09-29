@@ -13,3 +13,9 @@ The R scripts privided here show you practical applications in R Studio related 
 They will also contain tasks you can work on to practise using R yourselves and get feedback or ask questions in the tutorial sessions.
 
 ## Additional ressources
+
+### General R programming
+R for Data Science: https://r4ds.had.co.nz/index.html
+
+### Packages and other specifics
+ggplot2 Tutorial: https://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html
