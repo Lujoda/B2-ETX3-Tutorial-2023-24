@@ -7,12 +7,22 @@
       # Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/greenhouse-gas-emissions' 
       # [Online Resource])
 
+
+
+
+
 ###### Packages ######
 
-  # Packages are used to import
+  # Packages are used to import new external functions into R that are not available in the 
+  # standard (base) version of R
   
   install.packages("here")
   library(here)
+
+
+
+
+
 
 ###### Loading data #####
 
@@ -38,6 +48,12 @@
   # As you may notice it contains a lot of information and looks quite chaotic
   # Because of this it is always the first step to clean the data and extract only the information necessary for us
   
+  
+  
+  
+  
+  
+  
 ###### Cleaning data ######
   
   # In this exercise we want to focus only on CO2 emissions from Germany
@@ -56,6 +72,10 @@
   
   
 
+  
+  
+  
+  
 ###### Plotting data #####
   
   
@@ -82,6 +102,12 @@
        xlab = "Year", # title of x-axis
        ylab = "CO2 emissions in million tons")  # title of y-axis
   
+  
+  
+  
+  
+  
+  
 ###### Manipulating data ######
   
   # We want to see the developments of CO2 emission per capita
@@ -98,6 +124,44 @@
        ylab = "CO2 emissions in million tons")  # title of y-axis
 
   
+  
+  
+###### ggplot2 package ######
+  
+  # The ggplot2 package is used by many people to create more beautiful graphs and plots
+  # than it is possible in the base version of R
+  
+  
+  # First we install and open the package
+  install.packages("ggplot2")
+  library(ggplot2)
+  
+  
+  # Now we plot the same graph as before again using ggplot2
+  
+  gg = ggplot(data = ghg_ger, aes(x = year, y = co2percapita*1000000)) +
+    
+    # Specify the geom (line plot)
+    geom_line(color = "dodgerblue") +
+    
+    # Customize axis labels and titles
+    labs(
+      x = "Year",
+      y = "CO2 emissions per capita [tons]",
+      title = "Development of CO2 emissions per capita in Germany"
+    ) +
+    
+ 
+    # Customize the theme for a professional look
+    theme_bw()   # black and white theme
+    
+  
+  gg
+  
+  # There are countless options to customize your ggplot and make it look exactly how you want it
+  # We will not go deeper into it here but there are plenty of free online resources if you need it some day
+  
+  
 ##### Your tasks #####
   
   
@@ -110,10 +174,10 @@
   
   ###### 2. Plotting ######
   
-  # Plot the development of methane emissions in China
+  # Plot the development of methane emissions in China (if you want you can use ggplot2)
 
   
   ###### 3. New column ######
   
   # Create a new column "methanepercapita" that resembles the methane emissions 
-  # relative to the population and plot it
+  # relative to the population and plot it (if you want you can use ggplot2)
