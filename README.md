@@ -11,7 +11,7 @@ At the bottom you will find additional external ressources covering other aspect
 ## R Scripts and taks
 The R scripts privided here consist of two parts:
 
-1. **Demonstration** (Lecture related statistics in R)**
+1. **Demonstration** (Lecture related statistics in R)
 
 
 2. **Tasks** (Learn to do the statistics in R by yourselves)
