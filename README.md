@@ -9,8 +9,14 @@ These scripts do not encompass all there is to know about R but will go over the
 At the bottom you will find additional external ressources covering other aspects.
 
 ## R Scripts and taks
-The R scripts privided here show you practical applications in R Studio related to the contents of the lecture.
-They will also contain tasks you can work on to practise using R yourselves and get feedback or ask questions in the tutorial sessions.
+The R scripts privided here consist of two parts:
+
+1. **Demonstration** (Lecture related statistics in R)**
+
+
+2. **Tasks** (Learn to do the statistics in R by yourselves)
+
+You can use the tutorial sessions to get feedback and help on this.
 
 ## Additional ressources
 
