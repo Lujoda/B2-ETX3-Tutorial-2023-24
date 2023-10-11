@@ -21,7 +21,15 @@ You can use the tutorial sessions to get feedback and help on this.
 ## Additional ressources
 
 ### General R programming
-R for Data Science: https://r4ds.had.co.nz/index.html
+- **R for Data Science**:
+  - https://r4ds.had.co.nz/index.html
 
 ### Packages and other specifics
-ggplot2 Tutorial: https://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html
+- **ggplot2 Tutorial**:
+  -  https://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html
+
+- **Linear model assumptions and diagnosis**: 
+  - https://www.statology.org/diagnostic-plots-in-r/
+  - https://www.theanalysisfactor.com/linear-models-r-diagnosing-regression-model/
+  - http://sthda.com/english/articles/39-regression-model-diagnostics/161-linear-regression-assumptions-and-diagnostics-in-r-essentials
+
