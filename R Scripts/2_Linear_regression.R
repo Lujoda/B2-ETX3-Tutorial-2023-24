@@ -1,0 +1,93 @@
+#### B2/ETX3 Tutorial ####
+
+##### R Script 2: Linear regression
+
+#### Packages #####
+
+#install.packages("here")
+  library(here)
+
+##### Data #####
+  troposphere = read.csv(here("Data/2/troposphere.csv"))
+  low_troposphere = read.csv(here("Data/2/lower_troposphere.csv"))
+
+  # In this exercise we will work with atmospheric data in the troposphere (altitude [m], temperature [°C], 
+  # oxygen content [%], wind speed [km/h]) to explore linear regressions
+
+##### Linear regression ######
+
+###### Creating model and checking assumptions #######
+  
+  # We want to explore the relationship between altitude and temperature in the troposphere
+  # Let's see if we can use linear regression to predict temperature from altitude
+  
+  # First we plot the two variables on a scatterplot to see whether a linear relationship looks plausible or not
+
+  plot(troposphere$Altitude, troposphere$Temperature)
+    # Looks good!
+
+  # So now let's define our linear model using the "lm()" function
+  # We want to predict temperature from altitude, so:
+
+  temp_mod = lm(Temperature ~ Altitude, data = troposphere)
+  
+  # We add the regression line from the model to the scatterplot to see how it fits
+  
+  abline(temp_mod)
+  # Looks great
+  
+  
+  # Now we  have to check whether the assumptions of the linear model are fulfilled:
+  
+  
+  # 1. Linearity -> Yes! (we already checked that by plotting the variables)
+  
+  # 2. Normal distribution of residual errors -> ?
+  
+  # 3. Constant variance of residuals (Homoscedasticity) -> ?
+  
+  # 4. Independece of observations -> Yes! we assume that the data was gathered correctly
+  
+  # Also we will check for outliers and influential observations
+  
+  # To perform this model diagnosis we can use the "plot()"-function on our model "temp_mod"
+  # It will return diagnostic plots where we can see whether the assumptions are met or not
+  plot(temp_mod)
+  
+  
+  # We can see that normal distribution of residual errors constant variance of residuals (Homoscedasticity) 
+  # are fulfilled and that there are no outliers or influential observations
+  
+  # If you are unsure how to read this from the plots, go see the "Additional resources" on github
+  # There are links quickly explaining "Linear model assumptions and diagnosis"
+  
+  
+
+###### Interpreting model ######
+  
+  # Now that we know all the assumptions are fulfilled and our model is plausible
+  # we can interpret the model outcome and gain an understanding between the relationship of altitude 
+  # and temperature
+  
+  # For that we use the "summary()"-function
+  
+  summary(temp_mod)
+    # We can gather a lot of information from the output in the console, most importantly:
+  
+    # 1. The p-value is very small (<2.2e-16) -> the linear relationship between altitude and temperature
+    # is statistically highly significant
+  
+    # 2. R-squared value is very high (>= 0.99) -> the model can predict temperature from altitude 
+    # very accurately
+  
+    # 3. The formula to predict temperature from altitude is: 
+    # Temperature = 15.06 - 0.0065*Altitude
+  
+  
+  
+  ### Adding confidence intervals
+  
+  ### Tasks
+  
+  
+  
