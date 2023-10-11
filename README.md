@@ -33,3 +33,5 @@ You can use the tutorial sessions to get feedback and help on this.
   - https://www.theanalysisfactor.com/linear-models-r-diagnosing-regression-model/
   - http://sthda.com/english/articles/39-regression-model-diagnostics/161-linear-regression-assumptions-and-diagnostics-in-r-essentials
 
+- **Interpret regression output (summary()-function)**
+  - https://www.statology.org/interpret-regression-output-in-r/ 
