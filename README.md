@@ -35,3 +35,6 @@ You can use the tutorial sessions to get feedback and help on this.
 
 - **Interpret regression output (summary()-function)**
   - https://www.statology.org/interpret-regression-output-in-r/ 
+
+- **Confidence and prediction intervals**
+    - http://www.sthda.com/english/articles/40-regression-analysis/166-predict-in-r-model-predictions-and-confidence-intervals/ 
