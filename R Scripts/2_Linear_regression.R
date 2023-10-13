@@ -9,8 +9,7 @@
 
 ##### Data #####
   troposphere = read.csv(here("Data/2/troposphere.csv"))
-  low_troposphere = read.csv(here("Data/2/lower_troposphere.csv"))
-
+  
   # In this exercise we will work with atmospheric data in the troposphere (altitude [m], temperature [°C], 
   # oxygen content [%], wind speed [km/h]) to explore linear regressions
 
@@ -85,9 +84,72 @@
   
   
   
-  ### Adding confidence intervals
+###### Adding confidence intervals #####
   
-  ### Tasks
+  conf_intervals = confint(temp_mod, level = 0.95) # 95% confidence interval
+  conf_intervals
+  
+    # The 95% confidence interval of the influence of altitude on temperature is [-0.0067, -0.0062]
+    # The interval does not contain 0, hence the negative relationship between altitude and temperature 
+    # is significant
   
   
+  # To visualize the confidence band in the plot it is easier to use ggplot
+  
+  library(ggplot2)
+  temp_alti_plot_conf = ggplot(troposphere, aes(Altitude, Temperature)) + 
+    geom_point() +
+    stat_smooth(method = lm, level = 0.95) # This adds a 95% confidence band
+  temp_alti_plot_conf
+  
+  # We also want to add the prediction band
+  # First we calculate it:
+  predict_interval = predict(temp_mod, interval = "prediction")
+  
+  # Then we add it to the plot
+  troposphere_predict = cbind(troposphere, predict_interval) 
+      # Add the prediction band values to the troposphere data set
+  
+  temp_alti_plot_conf_pred = ggplot(troposphere_predict, aes(Altitude, Temperature)) + 
+    geom_point() +
+    stat_smooth(method = lm, level = 0.95) + # This adds a 95% confidence band (grey band)
+    geom_line(aes(y = lwr), color = "red", linetype = "dashed")+ # These two lines add the prediction band
+    geom_line(aes(y = upr), color = "red", linetype = "dashed")  # (red band)
+  
+  temp_alti_plot_conf_pred
+  
+  # Remember, the confidence interval deals with the average (mean) and 
+  # the prediction interval deals with actual predictions
+  
+  
+  
+  
+  
+  
+  
+  
+  
+##### Tasks #####
+  
+  # 1. Perform a linear regression on the variables "altitude" and "windspeed" in the "low_troposphere"
+  # data set:
+  
+  low_troposphere = read.csv(here("Data/2/lower_troposphere.csv"))
+  
+  # Go through the following steps:
+  
+    # 1.1 Check for linearity
+  
+    # 1.2 Create linear model
+  
+    # 1.3 Perform model diagnosis and check if all assumptions are fulfilled
+  
+    # 1.4 Add confidence and prediction bands to the plot
+  
+  
+  
+  
+  # 2. Answer the following question: Is simple linear regression suitable to predict oxygen levels in the
+  # troposphere from altitude and why?
+  # (use the variables "Altitude" and "Oxygen" the data set "troposphere")
   
