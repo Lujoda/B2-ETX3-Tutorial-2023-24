@@ -23,7 +23,7 @@ You can use the tutorial sessions to get feedback and help on this.
 **Tutorial introduction/overview**:
 https://docs.google.com/presentation/d/1AV5MHF9q0DH4-h37RCj3CYVExZ88wOOB1whJhXZ9v6k/edit#slide=id.p1
 
-**R for staters**:
+**R for starters**:
 https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3Dy_U/edit#slide=id.p1
 
 
