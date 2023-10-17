@@ -17,7 +17,9 @@ The R scripts privided here consist of two parts:
 2. **Tasks** (Learn to do the statistics in R by yourselves)
 
 You can use the tutorial sessions to get feedback and help on this.
-
+The tutorial sessions will be held each **monday** after the lecture:
+**Lecture**: 8am-10am
+**Tutorial**: 10am-12am
 
 ## Presentations
 **Tutorial introduction/overview**:
