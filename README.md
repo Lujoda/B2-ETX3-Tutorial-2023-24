@@ -8,7 +8,7 @@ Completing the R tasks provided here will teach you the necessary skillset to co
 These scripts do not encompass all there is to know about R but will go over the main ideas, concepts and workflow.
 At the bottom you will find additional external ressources covering other aspects.
 
-## R Scripts and taks
+## R Scripts and tasks
 The R scripts privided here consist of two parts:
 
 1. **Demonstration** (Lecture related statistics in R)
