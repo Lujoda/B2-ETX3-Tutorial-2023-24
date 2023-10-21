@@ -52,4 +52,9 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
   - https://www.statology.org/interpret-regression-output-in-r/ 
 
 - **Confidence and prediction intervals**
-    - http://www.sthda.com/english/articles/40-regression-analysis/166-predict-in-r-model-predictions-and-confidence-intervals/ 
+    - http://www.sthda.com/english/articles/40-regression-analysis/166-predict-in-r-model-predictions-and-confidence-intervals/
+ 
+- **t-test**:
+    - What are t-test assumptions and how to check them: https://www.statology.org/t-test-assumptions/
+    - t-test in R: https://www.datanovia.com/en/lessons/how-to-do-a-t-test-in-r-calculation-and-reporting/
+     
