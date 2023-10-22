@@ -4,23 +4,21 @@
 
 #### Packages #####
 
-#install.packages("here")
-library(here)
-library(readxl)
-library(ggplot2)
+#install.packages("pacman")
+library(pacman)
+p_load(here, readxl, ggplot2)
+
 
 ##### Data #####
 ghg = read.csv(here("Data/1/ghg.csv"))
 
 bats = read_excel("Data/3/abundance_data_full.xlsx", sheet = 1)
-grasshoppers = read_excel("Data/3/abundance_data_full.xlsx", sheet = 4)
 butterflies = read_excel("Data/3/abundance_data_full.xlsx", sheet = 7)
 
 dragonflies = read.csv("Data/3/dragonflies.csv")
 dragonflies_small = read_excel("Data/3/abundance_data_full.xlsx", sheet = 10)
-dragonflies_small = dragonflies_small[c(1,4,5,6)]
-write.csv(dragonflies_small, "Data/3/dragonflies_small_sample.csv", row.names = FALSE)
 
+grasshoppers = read.csv("Data/3/grasshoppers.csv")
 
   # In this exercise we will be working with ecological data that measured the abundance and species richness of 
   # various organism groups in habitats around Landau
@@ -165,8 +163,56 @@ ggplot(dragonflies, aes(Conservation_area, S)) + geom_boxplot()
       
 ##### Bootstrapping #####
 
-##### Cross-validation ######
+      # Bootstrapping has a lot of similarities to permutation testing 
+      # but bootstrapping is often used to estimate the confidence interval of a statistic
+      # when your sample size is too small to just use the original distribution
+      
+      # In this example we want to get the 95% confidence interval of the mean grasshopper abundance
+      # in conservation areas:
       
       
- 
+      # 0. Set seed for reproducibility
+      set.seed(992)
+      
+      # 1. Store relevant data in a variable 
+      gh_abund_conserv = grasshoppers$N[grasshoppers$Conservation == 1]
+      
+      # 2. Define number of bootstrap resamples
+      n_bootstrap = 1000
+      
+      # 3. Create an empty vector to store the bootstrap sample means
+      bootstrap_means <- numeric(n_bootstrap)
+      
+      # 4. Perform bootstrapping
+      for (i in 1:n_bootstrap) {
+
+        bootstrap_sample <- sample(gh_abund_conserv, replace = TRUE)  # Resample with replacement
+
+        bootstrap_means[i] <- mean(bootstrap_sample)  # Calculate the mean of the bootstrap sample
+
+      }
+      
+      # 5. Calculate the 95% confidence interval
+      lower_quantile <- quantile(bootstrap_means, 0.025)
+      upper_quantile <- quantile(bootstrap_means, 0.975)
+      
+      # 6. Print the results
+      cat("Bootstrap 95% Confidence Interval for Mean Score:", "\n")
+      cat("Lower Bound:", lower_quantile, "\n")
+      cat("Upper Bound:", upper_quantile, "\n")
+      
+      # 7. Plot a histogram of the bootstrap means
+      hist(bootstrap_means, main = "Bootstrap Distribution of Mean Grasshopper Abundance in conservation areas")
+      abline(v = c(lower_quantile, upper_quantile), col = "red", lty = 2)
+      
+      # Bootstrapping can create a distribution of ANY test statistic from which you can gather
+      # the confidence interval without having to redo the experiment many times to create
+      # such a distribution
+      
+      # This application of bootstrapping uses only functions from base R
+      # However there exist packages which can make bootstrapping even easier
+      # like the "boot"-package (See github resources for more information)
+      
+
+
       

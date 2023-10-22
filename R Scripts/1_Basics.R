@@ -16,8 +16,9 @@
   # Packages are used to import new external functions into R that are not available in the 
   # standard (base) version of R
   
-  install.packages("here")
-  library(here)
+  install.packages("pacman")
+  library(pacman)
+  p_load(here)
 
 
 

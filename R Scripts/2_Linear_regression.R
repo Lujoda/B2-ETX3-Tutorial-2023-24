@@ -4,8 +4,9 @@
 
 #### Packages #####
 
-#install.packages("here")
-  library(here)
+#install.packages("pacman")
+library(pacman)
+p_load(here)
 
 ##### Data #####
   troposphere = read.csv(here("Data/2/troposphere.csv"))
