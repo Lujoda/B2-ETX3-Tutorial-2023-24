@@ -58,4 +58,6 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
     - What are t-test assumptions and how to check them: https://www.statology.org/t-test-assumptions/
     - t-test overview and guide: https://www.graphpad.com/guides/the-ultimate-guide-to-t-tests
     - t-test in R: https://www.datanovia.com/en/lessons/how-to-do-a-t-test-in-r-calculation-and-reporting/
-     
+
+- **Permutation test**
+    - https://www.geeksforgeeks.org/permutation-hypothesis-test-in-r-programming/ 
