@@ -36,6 +36,10 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
 ## Additional ressources
 
 ### General R programming
+
+- **R programming basics**:
+    - http://sthda.com/english/wiki/easy-r-programming-basics
+    - 
 - **R for Data Science**:
   - https://r4ds.had.co.nz/index.html
 
@@ -60,4 +64,10 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
     - t-test in R: https://www.datanovia.com/en/lessons/how-to-do-a-t-test-in-r-calculation-and-reporting/
 
 - **Permutation test**
-    - https://www.geeksforgeeks.org/permutation-hypothesis-test-in-r-programming/ 
+    - https://www.geeksforgeeks.org/permutation-hypothesis-test-in-r-programming/
+ 
+- **Bootstrapping**
+    - https://www.statology.org/bootstrapping-in-r/
+ 
+- **Cross-validation**:
+    - https://www.statology.org/how-to-perform-cross-validation-for-model-performance-in-r/ 
