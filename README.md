@@ -23,7 +23,7 @@ The tutorial sessions will be held each **monday** after the lecture:
 **Lecture**: 8am-10am
 
 
-**Tutorial**: 10am-12am
+**Tutorial**: 10:30am-12am
 
 ## Presentations
 **Tutorial introduction/overview**:
@@ -42,7 +42,7 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
 - **R for Data Science**:
   - https://r4ds.had.co.nz/index.html
 
-- **Handling data frames (accessing columns, rows, adding, deleting, conditional filering etc.)**
+- **Handling data frames (accessing columns, rows, adding, deleting, conditional filtering etc.)**
     - https://r-coder.com/dataframe-r/
 
 ### Packages and other specifics
