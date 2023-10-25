@@ -80,7 +80,7 @@
 ###### Plotting data #####
   
   
-  # Now that we extacted the relevant data we want to plot 
+  # Now that we extracted the relevant data we want to plot 
   # the development of CO2 emissions over time in Germany
   
   

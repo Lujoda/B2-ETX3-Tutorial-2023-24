@@ -121,36 +121,3 @@ p_load(here)
   
   # Remember, the confidence interval deals with the average (mean) and 
   # the prediction interval deals with actual predictions
-  
-  
-  
-  
-  
-  
-  
-  
-  
-##### Tasks #####
-  
-  # 1. Perform a linear regression on the variables "altitude" and "windspeed" in the "low_troposphere"
-  # data set:
-  
-  low_troposphere = read.csv(here("Data/2/lower_troposphere.csv"))
-  
-  # Go through the following steps:
-  
-    # 1.1 Check for linearity
-  
-    # 1.2 Create linear model
-  
-    # 1.3 Perform model diagnosis and check if all assumptions are fulfilled
-  
-    # 1.4 Add confidence and prediction bands to the plot
-  
-  
-  
-  
-  # 2. Answer the following question: Is simple linear regression suitable to predict oxygen levels in the
-  # troposphere from altitude and why?
-  # (use the variables "Altitude" and "Oxygen" the data set "troposphere")
-  

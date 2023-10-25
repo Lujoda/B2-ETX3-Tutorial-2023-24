@@ -28,8 +28,10 @@ grasshoppers = read.csv("Data/3/grasshoppers.csv")
 
 ##### Visualization/Plotting #####
 ggplot(dragonflies, aes(Conservation_area, N)) + geom_boxplot()
-ggplot(dragonflies, aes(Conservation_area, S)) + geom_boxplot()
 
+  # It's a good idea to start by inspecting the data visually
+  # to see if our hypothesis makes sense, in this case:
+  # do the groups even look different?
 
 
 ##### t-test #####
@@ -113,6 +115,7 @@ ggplot(dragonflies, aes(Conservation_area, S)) + geom_boxplot()
       
       # 0. Set seed (makes random operations reproducable for other people => good practice)
       set.seed(1337)
+      
       # 1. Isolate the groups you want to compare
       df_abund_conserv_small = dragonflies_small$N[dragonflies_small$Conservation == 1]
       df_abund_nonconserv_small = dragonflies_small$N[dragonflies_small$Conservation == 0]
@@ -181,20 +184,20 @@ ggplot(dragonflies, aes(Conservation_area, S)) + geom_boxplot()
       n_bootstrap = 1000
       
       # 3. Create an empty vector to store the bootstrap sample means
-      bootstrap_means <- numeric(n_bootstrap)
+      bootstrap_means = numeric(n_bootstrap)
       
       # 4. Perform bootstrapping
       for (i in 1:n_bootstrap) {
 
-        bootstrap_sample <- sample(gh_abund_conserv, replace = TRUE)  # Resample with replacement
+        bootstrap_sample = sample(gh_abund_conserv, replace = TRUE)  # Resample with replacement
 
-        bootstrap_means[i] <- mean(bootstrap_sample)  # Calculate the mean of the bootstrap sample
+        bootstrap_means[i] = mean(bootstrap_sample)  # Calculate the mean of the bootstrap sample
 
       }
       
       # 5. Calculate the 95% confidence interval
-      lower_quantile <- quantile(bootstrap_means, 0.025)
-      upper_quantile <- quantile(bootstrap_means, 0.975)
+      lower_quantile = quantile(bootstrap_means, 0.025)
+      upper_quantile = quantile(bootstrap_means, 0.975)
       
       # 6. Print the results
       cat("Bootstrap 95% Confidence Interval for Mean Score:", "\n")
@@ -212,7 +215,4 @@ ggplot(dragonflies, aes(Conservation_area, S)) + geom_boxplot()
       # This application of bootstrapping uses only functions from base R
       # However there exist packages which can make bootstrapping even easier
       # like the "boot"-package (See github resources for more information)
-      
-
-
       
