@@ -32,6 +32,8 @@ https://docs.google.com/presentation/d/1AV5MHF9q0DH4-h37RCj3CYVExZ88wOOB1whJhXZ9
 **R for starters**:
 https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3Dy_U/edit#slide=id.p1
 
+**Handling data frames (accessing columns, rows, adding, deleting, conditional filering etc.)**
+https://r-coder.com/dataframe-r/
 
 ## Additional ressources
 
