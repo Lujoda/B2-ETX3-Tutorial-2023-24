@@ -162,23 +162,3 @@
   # There are countless options to customize your ggplot and make it look exactly how you want it
   # We will not go deeper into it here but there are plenty of free online resources if you need it some day
   
-  
-##### Your tasks #####
-  
-  
-  ###### 1. Subsetting #####
-  
-  # Create subset of the "ghg" data set that only contains information about the year, 
-  # methane emissions and population of China
-  
-  
-  
-  ###### 2. Plotting ######
-  
-  # Plot the development of methane emissions in China (if you want you can use ggplot2)
-
-  
-  ###### 3. New column ######
-  
-  # Create a new column "methanepercapita" that resembles the methane emissions 
-  # relative to the population and plot it (if you want you can use ggplot2)
