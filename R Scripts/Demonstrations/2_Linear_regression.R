@@ -6,7 +6,7 @@
 
 #install.packages("pacman")
 library(pacman)
-p_load(here)
+p_load(here, ggplot2)
 
 ##### Data #####
   troposphere = read.csv(here("Data/2/troposphere.csv"))
@@ -87,12 +87,20 @@ p_load(here)
   
 ###### Adding confidence intervals #####
   
-  conf_intervals = confint(temp_mod, level = 0.95) # 95% confidence interval
-  conf_intervals
+  ## Slope
+  conf_intervals_slope = confint(temp_mod, level = 0.95) # 95% confidence interval of the slope
+  conf_intervals_slope
   
-    # The 95% confidence interval of the influence of altitude on temperature is [-0.0067, -0.0062]
-    # The interval does not contain 0, hence the negative relationship between altitude and temperature 
-    # is significant
+  # The 95% confidence interval of the influence of altitude on temperature is [-0.0067, -0.0062]
+  # The interval does not contain 0, hence the negative relationship between altitude and temperature 
+  # is significant
+  
+  ## Mean
+  conf_intervals_fit = predict(temp_mod, interval = "confidence", level = 0.95) # 95% confidence intervals of the fit
+
+    # The 95% confidence interval of the fit tells us for each altitude an interval in which the true mean lies 
+    # in 95% of all replicating studies
+    # This is also the confidence band you will see in the graph
   
   
   # To visualize the confidence band in the plot it is easier to use ggplot
@@ -105,7 +113,7 @@ p_load(here)
   
   # We also want to add the prediction band
   # First we calculate it:
-  predict_interval = predict(temp_mod, interval = "prediction")
+  predict_interval = predict(temp_mod, interval = "prediction", level = 0.95)
   
   # Then we add it to the plot
   troposphere_predict = cbind(troposphere, predict_interval) 
