@@ -10,15 +10,9 @@ p_load(here, readxl, ggplot2)
 
 
 ##### Data #####
-ghg = read.csv(here("Data/1/ghg.csv"))
-
-bats = read_excel("Data/3/abundance_data_full.xlsx", sheet = 1)
-butterflies = read_excel("Data/3/abundance_data_full.xlsx", sheet = 7)
-
 dragonflies = read.csv("Data/3/dragonflies.csv")
-dragonflies_small = read_excel("Data/3/abundance_data_full.xlsx", sheet = 10)
-
 grasshoppers = read.csv("Data/3/grasshoppers.csv")
+
 
   # In this exercise we will be working with ecological data that measured the abundance and species richness of 
   # various organism groups in habitats around Landau
