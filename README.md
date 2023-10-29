@@ -8,13 +8,25 @@ Completing the R tasks provided here will teach you the necessary skillset to co
 These scripts do not encompass all there is to know about R but will go over the main ideas, concepts and workflow.
 At the bottom you will find additional external ressources covering other aspects.
 
+# How to use this GitHub repository?
+In R Studio you can create a project and link it to this repository. This makes working with the scripts and exercises seamless and easy, since you won't have 
+to manage data and other files individually. When linked to this repository R Studio can access all data on here.
+To do this you will need to to the following:
+
+**0.** Have **Git** and **R Studio** installed on your computer (**Git**: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git ; **R Studio**: https://techvidvan.com/tutorials/install-r/)
+
+**1.** Create a **new project** in R Studio and link it to this repository (Instructions: https://code.adonline.id.au/connect-an-rstudio-project-to-github/)
+
+**2.** Now you can access the scripts directly in R Studio (No need to download any scripts or data manually)
+
+
 ## R Scripts and tasks
 The R scripts privided here consist of two parts:
 
 1. **Demonstration** (Lecture related statistics in R)
 
 
-2. **Tasks** (Learn to do the statistics in R by yourselves)
+2. **Exercises** (Learn to do the statistics in R by yourselves)
 
 You can use the tutorial sessions to get feedback and help on this.
 The tutorial sessions will be held each **monday** after the lecture:
