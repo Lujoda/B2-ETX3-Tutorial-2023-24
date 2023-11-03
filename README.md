@@ -35,7 +35,7 @@ The tutorial sessions will be held each **monday** after the lecture:
 **Lecture**: 8am-10am
 
 
-**Tutorial**: 10:30am-12am
+**Tutorial**: 10:30am-12am and 12.15am - 1.45pm
 
 ## Presentations
 **Tutorial introduction/overview**:
