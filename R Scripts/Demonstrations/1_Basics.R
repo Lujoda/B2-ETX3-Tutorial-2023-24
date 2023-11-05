@@ -18,7 +18,7 @@
   
   install.packages("pacman")
   library(pacman)
-  p_load(here)
+  p_load(here, ggplot2)
 
 
 
@@ -133,10 +133,7 @@
   # than it is possible in the base version of R
   
   
-  # First we install and open the package
-  install.packages("ggplot2")
-  library(ggplot2)
-  
+
   
   # Now we plot the same graph as before again using ggplot2
   

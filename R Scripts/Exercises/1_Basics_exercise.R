@@ -17,7 +17,7 @@
 
 #install.packages("pacman")
 library(pacman)
-p_load(here)
+p_load(here, ggplot2)
 
 
 
@@ -38,8 +38,11 @@ ghg = read.csv(here("Data/1/ghg.csv"))
 
 
 ###### 2. Plotting ######
-  
+    
   # Plot the development of methane emissions in China (if you want you can use ggplot2)
+  # The plot should only depict years in which methane emission data is available (= methane value should not be "NA", the 
+  # function na.omit() removes all rows which contain "NA")
+  # Give your plot and your axes a title 
 
 
 ###### 3. New column ######
@@ -52,11 +55,11 @@ ghg = read.csv(here("Data/1/ghg.csv"))
 ###### Bonus task - filtering ######
 
   # Create a new data frame from "ghg" that:
-    # 1. Only contains data from the year 2015
+  # 1. Only contains data from the year 2015
   
-    # 2. Only contains countries with a CO2 emission less than 1 billion tons (CO2 unit in the data frame is million tons)
-    # (similar to this you can also remove outliers in a data frame)
+  # 2. Only contains countries with a CO2 emission less than 1 billion tons (CO2 unit in the data frame is million tons)
+  # (similar to this you can also remove outliers in a data frame)
 
-    # 3. Only contains countries that have a iso code (e.g IND,RUS,JPN)
-
+  # 3. Only contains countries that have a iso code (e.g IND,RUS,JPN)
+ 
 
