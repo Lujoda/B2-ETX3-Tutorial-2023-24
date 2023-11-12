@@ -23,7 +23,7 @@ To do this you will need to to the following:
 ## R Scripts and tasks
 The R scripts privided here consist of two parts:
 
-1. **Demonstration** (Lecture related statistics in R)
+1. **Demonstration** (Shows lecture related statistics in R and helps you solve the exercises)
 
 
 2. **Exercises** (Learn to do the statistics in R by yourselves)
