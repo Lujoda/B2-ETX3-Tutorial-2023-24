@@ -35,6 +35,7 @@ low_troposphere = read.csv(here("Data/2/lower_troposphere.csv"))
 
 # 1.4 Add confidence and prediction bands to the plot
 
+# 1.5 Interpret the models results
 
 
 
