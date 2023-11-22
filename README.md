@@ -84,4 +84,10 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
     - https://www.statology.org/bootstrapping-in-r/
  
 - **Cross-validation**:
-    - https://www.statology.org/how-to-perform-cross-validation-for-model-performance-in-r/ 
+    - https://www.statology.org/how-to-perform-cross-validation-for-model-performance-in-r/
+ 
+- **Multiple Linear Regression**:
+    - https://www.statology.org/multiple-linear-regression-r/
+ 
+-**Assumptions of Multiple Linear Regression**
+    - https://www.statology.org/multiple-linear-regression-assumptions/
