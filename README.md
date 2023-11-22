@@ -89,5 +89,5 @@ https://docs.google.com/presentation/d/1OiBQgU4iIbuW1PxQckXuKJtwOKprfAUQ73v7Mg3D
 - **Multiple Linear Regression**:
     - https://www.statology.org/multiple-linear-regression-r/
  
--**Assumptions of Multiple Linear Regression**
+- **Assumptions of Multiple Linear Regression**:
     - https://www.statology.org/multiple-linear-regression-assumptions/
