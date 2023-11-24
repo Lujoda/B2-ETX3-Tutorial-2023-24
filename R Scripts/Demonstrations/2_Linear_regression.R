@@ -55,7 +55,7 @@ p_load(here, ggplot2)
   plot(temp_mod)
   
   
-  # We can see that normal distribution of residual errors constant variance of residuals (Homoscedasticity) 
+  # We can see that normal distribution of residual errors and constant variance of residuals (Homoscedasticity) 
   # are fulfilled and that there are no outliers or influential observations
   
   # If you are unsure how to read this from the plots, go see the "Additional resources" on github
